@@ -1,0 +1,326 @@
+html,body{
+    height: 100%
+}
+body{
+    background: url('../img/bg.png') no-repeat left top;
+    background-size: 100% 100%;
+    position: relative
+}
+.login{
+    width: 465px;
+    height: 500px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+.login-title{
+    font-size: 31px;
+    color: #4760FF;
+    padding-top: 70px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.field_wrap{
+    text-align: center
+}
+/* 错误提示 */
+label.error{
+    color:red;
+    position: absolute;
+    left: 0
+}
+.login-p{
+    margin-top: 35px;
+}
+.login-p button{
+    width: 256px;
+    height: 45px;
+    background: #4760FF;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px
+} 
+.login-p button:hover{
+    background: #384bc5;
+    color: #fff
+}
+/* 输入框特效 */
+.eye-icon{
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    bottom: 20px;
+    cursor: pointer
+} 
+.eye-open{
+    width: 15px;
+    height: 10px;
+    background: url('../img/eyeopen.png') no-repeat left top;
+    background-size: 100% 100%;
+}
+.eye-close{
+    width: 15px;
+    height: 5px;
+    background: url('../img/eyeclose.png') no-repeat left top;
+    background-size: 100% 100%;
+}
+.mu-text-field-content{
+    position: relative
+}
+/*!
+ * Muse UI v2.1.0 (https://github.com/myronliu347/vue-carbon)
+ * (c) 2017 Myron Liu 
+ * Released under the MIT License.
+ */
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+
+.mu-picker-item.selected {
+    color: rgba(0,0,0,.87);
+    -webkit-transform: translateZ(0) rotateX(0);
+    transform: translateZ(0) rotateX(0)
+}
+
+.mu-text-field {
+    font-size: 16px;
+    width: 256px;
+    min-height: 48px;
+    display: inline-block;
+    position: relative;
+    color: rgba(0,0,0,.54);
+    margin-bottom: 8px
+}
+
+.mu-text-field.full-width {
+    width: 100%
+}
+
+.mu-text-field.has-icon {
+    padding-left: 56px
+}
+
+.mu-text-field.focus-state {
+    color: #7e57c2
+}
+
+.mu-text-field.focus-state.error {
+    color: #f44336
+}
+
+.mu-text-field.has-label {
+    min-height: 72px
+}
+
+.mu-text-field-icon {
+    position: absolute;
+    left: 16px;
+    top: 12px
+}
+
+.mu-text-field.has-label .mu-text-field-icon {
+    top: 36px
+}
+
+.mu-text-field-content {
+    display: block;
+    height: 100%;
+    padding-bottom: 12px;
+    padding-top: 4px
+}
+
+.mu-text-field.disabled .mu-text-field-content {
+    color: rgba(0,0,0,.38);
+    cursor: not-allowed
+}
+
+.mu-text-field.has-label .mu-text-field-content {
+    padding-top: 28px;
+    padding-bottom: 12px
+}
+
+.mu-text-field-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    background: none;
+    border-radius: 0 0 0 0;
+    box-shadow: none;
+    display: block;
+    padding: 0 25px 0 0 ;
+    margin: 0;
+    width: 100%;
+    height: 32px;
+    font-style: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    font-stretch: inherit;
+    font-size: inherit;
+    color: rgba(0,0,0,.87);
+    font-family: inherit;
+    position: relative
+}
+
+.mu-text-field-help {
+    position: absolute;
+    margin-top: 6px;
+    font-size: 12px;
+    line-height: 12px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    left: 0;
+    right: 0
+}
+
+.mu-text-field.has-icon .mu-text-field-help {
+    left: 56px
+}
+
+.mu-text-field.error .mu-text-field-help {
+    color: #f44336
+}
+
+.mu-text-field.disabled .mu-text-field-help {
+    color: inherit
+}
+
+.mu-text-field-line {
+    margin: 0;
+    height: 1px;
+    border: none;
+    background-color: rgba(0,0,0,.12);
+    left: 0;
+    right: 0;
+    position: absolute
+}
+
+.mu-text-field.has-icon .mu-text-field-line {
+    left: 56px
+}
+
+.mu-text-field-line.disabled {
+    height: auto;
+    background-color: transparent;
+    border-bottom: 2px dotted rgba(0,0,0,.38)
+}
+
+.mu-text-field-focus-line {
+    margin: 0;
+    height: 2px;
+    border: none;
+    background-color: #7e57c2;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: -1px;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: -webkit-transform .45s cubic-bezier(.23,1,.32,1);
+    transition: -webkit-transform .45s cubic-bezier(.23,1,.32,1);
+    transition: transform .45s cubic-bezier(.23,1,.32,1);
+    transition: transform .45s cubic-bezier(.23,1,.32,1),-webkit-transform .45s cubic-bezier(.23,1,.32,1)
+}
+
+.mu-text-field.has-icon .mu-text-field-focus-line {
+    left: 56px
+}
+
+.mu-text-field-focus-line.error,.mu-text-field-focus-line.focus {
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1)
+}
+
+.mu-text-field-focus-line.error {
+    background-color: #f44336
+}
+
+.mu-text-field-textarea {
+    resize: vertical;
+    line-height: 1.5;
+    position: relative;
+    height: 100%;
+    resize: none
+}
+
+.mu-text-field-multiline {
+    width: 100%;
+    position: relative
+}
+
+.mu-text-field-textarea-hide {
+    width: 100%;
+    height: auto;
+    resize: none;
+    position: absolute;
+    padding: 0;
+    overflow: auto;
+    visibility: hidden
+}
+
+.mu-text-field-label {
+    line-height: 20px;
+    -webkit-transition: all .45s cubic-bezier(.23,1,.32,1);
+    transition: all .45s cubic-bezier(.23,1,.32,1);
+    z-index: 1;
+    cursor: text;
+    -webkit-transform: translateZ(0) scale(.75);
+    transform: translateZ(0) scale(.75);
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.mu-text-field.has-label .mu-text-field-label {
+    top: 8px;
+    position: absolute
+}
+
+.mu-text-field.has-label .mu-text-field-label.float {
+    -webkit-transform: translate3d(0,28px,0) scale(1);
+    transform: translate3d(0,28px,0) scale(1);
+    color: rgba(0,0,0,.38)
+}
+
+.mu-text-field-hint {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity .45s cubic-bezier(.23,1,.32,1);
+    transition: opacity .45s cubic-bezier(.23,1,.32,1);
+    color: rgba(0,0,0,.38);
+    line-height: 34px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: text;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%
+}
+
+.mu-text-field-hint.show {
+    opacity: 1
+}
+
+.mu-text-field.multi-line .mu-text-field-hint {
+    line-height: 1.5
+}
+ 

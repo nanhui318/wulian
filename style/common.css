@@ -1,0 +1,87 @@
+div,p,ul,ol,li,h1,h2,h3,h4,h5{
+    margin: 0 ;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none
+} 
+body{
+    background-color: #282A2D;
+    font-family: '微软雅黑';
+    font-size: 12px;
+    padding-bottom: 30px;
+}
+.header{
+    height: 70px;
+    color: #fff;
+    overflow: hidden
+}
+
+.header-search-wrap{
+    margin-top: 22px;
+    position: relative
+}
+.header-search{
+    height: 2.75rem;
+    line-height: 2.75rem;
+    display: inline-block;
+    font-size: 1.16rem;
+    padding-right: 2.75rem;
+}
+.header-search-icon{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%)
+} 
+.vertiacal{
+    line-height: 70px;
+}
+.header-back-icon{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url('../img/back.png') no-repeat left top;
+    background-size: 100% 100%; 
+    vertical-align: middle
+}
+.header-big-icon{
+    background: url('../img/big.png') no-repeat left top;
+    background-size: 100% 100%; 
+}
+.individuals-icon{
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    background: url('../img/photo.png') no-repeat left top;
+    border-radius: 50%;
+    background-size: 100% 100%;
+    float: left;
+    margin-right: 10px;
+}
+
+.header-right{
+     
+}
+.header-right>div{
+    display: inline-block;
+    width: 150px;
+    float: left;
+}
+.logo{
+    position: relative;
+    width:182px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center
+}
+.logo span{ 
+    vertical-align: middle 
+}
+
+
+
+
+
+

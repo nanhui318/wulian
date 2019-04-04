@@ -1,0 +1,285 @@
+.content::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.left-nav{ 
+    width: 200px;
+    background: #282A2D;
+    color: #fff;
+    float: left;
+    margin-top: 25px;
+    cursor: pointer;
+    /* position: absolute;
+    top: 20px */
+} 
+.left-nav ul > li p{ 
+    padding-left: 35px; 
+    position: relative;
+
+}
+.left-nav ul ol p{
+    color: #8293FC;
+    text-indent: 1rem
+} 
+
+.left-nav ul > li p span{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transform: translateY(-50%) rotate(45deg) ;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    
+}
+.left-nav ul > li p span.cur{
+    transform: translateY(-50%) rotate(-135deg) ; 
+}
+
+.left-nav ul > li ol p:hover{
+    background: #0e183c
+}
+.left-nav ul > li .cur-p{ 
+    position: relative;
+    color: #FFFFFF
+}
+.left-nav ul > li .cur-p::after{ 
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 4px;
+    height: 14px;
+    background: #fff;
+    transform: translateY(-50%);
+}
+
+.left-nav li{
+    line-height: 35px; 
+}
+.active-li{
+    background: #142254
+}
+.active-li > p{
+    background: #4760ff
+}
+.left-nav .active-li-ol{
+    display: block
+}
+.left-nav ol{
+    display: none
+}
+
+.right-content{
+    background: #F5F5F5; 
+    margin-right: 25px; 
+    margin-left: 200px;  
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 18px
+} 
+.header::after{
+    content: "";
+    display: block;
+    clear: both
+}
+
+.dataStatistics .datatj{
+    font-size: 20px;
+    margin: 30px 0 0px 10px
+}
+
+.title{
+    font-size: 30px;
+}
+.service{
+    margin-top: 20px; 
+}
+.service table{
+    width: 100%;
+    height: 180px;
+    color:#fff
+}
+.service div{
+    margin: 0 30px;
+    border-radius: 10px;
+    overflow: hidden
+}
+.service h3{
+    background: #0B32B4;
+    line-height: 50px;
+    font-weight: normal;
+    font-size: 14px;
+    padding-left: 10px;
+}
+.service ol{
+    height: 75px;
+    background: -webkit-linear-gradient(#3D6AFF, #164AFC); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#3D6AFF, #164AFC); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#3D6AFF, #164AFC); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#3D6AFF, #164AFC); /* 标准的语法 */
+}
+.service .h32{
+    background: #BE5A0A
+}
+.service .h33{
+    background: #009950
+}
+.service .h34{
+    background: #178AE3
+}
+.service .ol2{
+    height: 75px;
+    background: -webkit-linear-gradient(#FE962E, #EF6A00); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#FE962E, #EF6A00); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#FE962E, #EF6A00); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#FE962E, #EF6A00); /* 标准的语法 */
+}
+.service .ol3{
+    height: 75px;
+    background: -webkit-linear-gradient(#5CE622, #0CAF63); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#5CE622, #0CAF63); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#5CE622, #0CAF63); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#5CE622, #0CAF63); /* 标准的语法 */
+}
+.service .ol4{
+    height: 75px;
+    background: -webkit-linear-gradient(#29D3FF, #3199FF); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#29D3FF, #3199FF); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#29D3FF, #3199FF); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#29D3FF, #3199FF); /* 标准的语法 */
+}
+
+
+
+
+.service ol::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.service div{
+    color: #fff
+}
+.service ol li{
+    float: left;
+    width: 50%;
+}
+.service p{
+    text-align: center;
+    line-height: 24px;
+}
+.service .num{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 17px;
+}
+.service .text{
+    font-size: 14px; 
+}
+
+
+.home-chart li{
+    height: 360px; 
+}
+.home-chart>li{
+    height: auto
+}
+.home-chart li>div,.home-chart li>div>div{
+    height: 100%
+} 
+.home-chart li>div{
+    margin: 15px;
+    background: #fff; 
+    border-radius: 10px; 
+    margin-bottom: 0;
+}
+.home-chart li .Histogram,.home-chart li .pie{
+    height: 300px
+}
+.home-chart h3{
+    padding-top: 23px;
+    padding-left: 17px;
+    font-size: 16px;
+    position: relative
+}
+.home-chart h3::after{
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 18px;
+    background: #3D6AFF;
+    position: absolute;
+    left: 0%;
+    bottom: 3px; 
+}
+.home-chart .pie>p,.home-chart .pie>ol{
+    float: left;
+    width: 50%;
+    height: 100% ;
+    position: relative
+}
+.pie {
+    font-size: 16px;
+}
+.pie p::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.pie p span{
+    float: left;
+    margin-right: 5px;
+}
+.pie .circle-icon{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 12px;
+}
+.pie .circle-icon::after{
+    content: "";
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%
+}
+.pie .circle-icon-blue{
+    border: 1px solid #2E7EFE;
+}
+.pie .circle-icon-blue::after{
+    background: #2E7EFE;
+}
+.pie .circle-icon-orange{
+    border: 1px solid #FE962E;
+}
+.pie .circle-icon-orange::after{
+    background: #FE962E;
+}
+.pie .circle-icon-green{
+    border: 1px solid #20C170;
+}
+.pie .circle-icon-green::after{
+    background: #20C170;
+}
+.home-chart .pie>ol{
+    position: relative;
+
+}
+.home-chart .pie>ol li{
+    height: 300px;
+    position: absolute;
+    top: 35%;
+    left: 40px; 
+    line-height: 40px;
+}
